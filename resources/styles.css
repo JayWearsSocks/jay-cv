@@ -1,0 +1,84 @@
+:root {
+    --moss: #004517;
+    --lightMoss: #00862d;
+}
+
+html {
+    font-size: 16px;
+    font-family: helvetica, arial, sans-serif;
+}
+
+.banner {
+    background: linear-gradient(to top, var(--moss), #0000), url("./images/moss.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: 50% 25%;
+
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.banner * {
+    margin: 2rem auto;
+}
+
+.banner h1 {
+    font-size: 3rem;
+}
+
+.banner p {
+    padding: 1rem 10%;
+}
+
+@media only screen and (max-width: 810px) {
+    .banner p {
+        text-align: left;
+    }  
+}
+
+main {
+    margin: 0 1rem;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a.stack {
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+section h2 {
+    color: var(--lightMoss);
+    font-size: 2rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+article h3 {
+    color: black;
+    font-weight: bolder;
+}
+
+article h4, article time {
+    display: inline;
+    margin-right: 1rem;
+}
+
+footer {
+    background: var(--moss);
+    background-size: cover;
+    background-repeat: none;
+    
+    color: white;
+    margin-top: 1.5rem;
+    padding: 0 auto;
+}
+
+footer a {
+    display: inline-block;
+    padding: 1rem 2rem;
+}
