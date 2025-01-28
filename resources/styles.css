@@ -37,8 +37,33 @@ html {
     }  
 }
 
+aside {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    box-sizing: border-box; /* where the magic happens, takes the paddings into account for the width size */
+
+    padding-left: 1rem;
+}
+
 main {
-    margin: 0 1rem;
+    display: inline-block;
+    width: 66%;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    padding: 0 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+    aside {
+        display: block;
+        width: 100%;
+    }
+    main {
+        display: block;
+        width: 100%;
+    }
 }
 
 a {
