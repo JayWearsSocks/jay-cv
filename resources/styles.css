@@ -1,6 +1,8 @@
 :root {
     --moss: #004517;
     --lightMoss: #00862d;
+    --leaf: #7c1165;
+    --lightLeaf: rgb(231, 89, 167);
 }
 
 html {
@@ -29,6 +31,7 @@ html {
 
 .banner p {
     padding: 1rem 10%;
+    margin: 0;
 }
 
 @media only screen and (max-width: 810px) {
@@ -36,26 +39,51 @@ html {
         text-align: left;
     }  
 }
+#middle {
+    display: flex;
+    flex-direction: row;
+    /* background-color: lightpink; */
+}
 
 aside {
-    display: inline-block;
     width: 33%;
-    vertical-align: top;
-    box-sizing: border-box; /* where the magic happens, takes the paddings into account for the width size */
+    padding: 0 1rem 1rem;
 
-    padding-left: 1rem;
+    background-color: var(--moss);
+    color: white;
+}
+
+aside h2 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    list-style-type: none;
+    border: var(--lightLeaf) 1px solid;
+    padding: 0 0.5rem;
 }
 
 main {
     display: inline-block;
     width: 66%;
+    max-width: 750px;
     vertical-align: top;
     box-sizing: border-box;
 
-    padding: 0 1rem;
+    padding: 0 2rem 1rem;
 }
 
 @media only screen and (max-width: 720px) {
+    #middle {
+        flex-direction: column;
+    }
     aside {
         display: block;
         width: 100%;
@@ -94,12 +122,11 @@ article h4, article time {
 }
 
 footer {
-    background: var(--moss);
+    background: var(--leaf);
     background-size: cover;
     background-repeat: none;
     
     color: white;
-    margin-top: 1.5rem;
     padding: 0 auto;
 }
 
