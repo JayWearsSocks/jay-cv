@@ -183,12 +183,35 @@ footer {
     background: var(--leaf);
     background-size: cover;
     background-repeat: none;
-    
-    color: white;
-    padding: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer a {
     display: inline-block;
-    padding: 1rem 2rem;
+    margin: 0.8rem 1.5rem;
+}
+
+footer section.contact {
+    color: white;
+}
+
+footer section.source {
+    color: lightgrey
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer section {
+    width: 100%;
+  }
+
+  footer section.source a {
+    margin-top: 0;
+  }
 }
