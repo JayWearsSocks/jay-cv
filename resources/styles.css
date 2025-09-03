@@ -46,11 +46,14 @@ html {
 }
 
 aside {
-    width: 33%;
-    padding: 0 1rem 1rem;
-
+    width: 30%;
+    padding: 0 2rem 2rem;
     background-color: var(--moss);
     color: white;
+}
+
+aside hr {
+    color: var(--lightLeaf);
 }
 
 aside h2 {
@@ -59,21 +62,60 @@ aside h2 {
     text-transform: uppercase;
 }
 
+aside h3 {
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    
+}
+
+aside h4 {
+    font-weight: bolder;
+    margin: 1.0rem 0 0.3rem;
+}
+
 aside ul {
-    margin: 0;
+    margin: 0 0 0 1rem;
     padding: 0;
 }
 
 aside li {
     list-style-type: none;
-    border: var(--lightLeaf) 1px solid;
     padding: 0 0.5rem;
+}
+
+ul.stack-items {
+  display: grid;
+  grid-template-columns: minmax(auto, 130px) auto;
+}
+
+ul.stack-items li {
+    margin: 0.2rem 1.0rem 0 0;
+    padding: 0;
+}
+
+ul.other-items li {
+    padding: 0.2rem 0;
+}
+
+ul.skills li::marker {
+    content: "🌿";
+    /* content: "🪴"; */
+}
+
+ul.learning li::marker {
+    content: "🌱";
+}
+
+ul.stack-items li::marker {
+    content: none;
 }
 
 main {
     display: inline-block;
     width: 66%;
-    max-width: 750px;
+    max-width: 680px;
     vertical-align: top;
     box-sizing: border-box;
 
@@ -114,11 +156,27 @@ section h2 {
 article h3 {
     color: black;
     font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 1.0rem 0 0.5rem;
 }
 
-article h4, article time {
-    display: inline;
+article h4 {
+    color: var(--leaf);
+    margin: 0;
+}
+
+article time {
+    font-weight: normal;
     margin-right: 1rem;
+}
+
+article li {
+    list-style-type: none;
+    padding-left: 0.5em;
+}
+
+article li::marker{
+    content: "✔";
 }
 
 footer {
