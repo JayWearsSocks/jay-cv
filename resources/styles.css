@@ -60,7 +60,7 @@ aside hr {
     color: var(--lightLeaf);
 }
 
-aside section h2 {
+aside h2 {
     color: var(--lightLeaf);
     font-size: 2rem;
     font-weight: lighter;
@@ -136,7 +136,7 @@ a.stack {
     font-weight: bolder;
 }
 
-main section h2 {
+main h2 {
     color: var(--lightMoss);
     font-size: 2rem;
     font-weight: lighter;
