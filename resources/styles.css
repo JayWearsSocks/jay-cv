@@ -52,12 +52,17 @@ aside {
     color: white;
 }
 
+aside section {
+    margin-bottom: 2rem;
+}
+
 aside hr {
     color: var(--lightLeaf);
 }
 
-aside h2 {
-    font-size: 1.5rem;
+aside section h2 {
+    color: var(--lightLeaf);
+    font-size: 2rem;
     font-weight: lighter;
     text-transform: uppercase;
 }
@@ -80,37 +85,22 @@ aside ul {
     padding: 0;
 }
 
+aside ul.stack-items {
+    display: grid;
+    grid-template-columns: minmax(auto, 150px) auto;
+}
+
 aside li {
     list-style-type: none;
-    padding: 0 0.5rem;
+    margin: 0.2rem 0.5rem 0 0.5rem;
 }
 
-ul.stack-items {
-  display: grid;
-  grid-template-columns: minmax(auto, 130px) auto;
-}
-
-ul.stack-items li {
-    margin: 0.2rem 1.0rem 0 0;
-    padding: 0;
-}
-
-ul.other-items li {
-    padding: 0.2rem 0;
-}
-
-ul.skills li::marker {
+/* ul li::marker {
+    content: "🌸";
     content: "🌿";
-    /* content: "🪴"; */
-}
-
-ul.learning li::marker {
+    content: "🪴";
     content: "🌱";
-}
-
-ul.stack-items li::marker {
-    content: none;
-}
+} */
 
 main {
     display: inline-block;
@@ -146,7 +136,7 @@ a.stack {
     font-weight: bolder;
 }
 
-section h2 {
+main section h2 {
     color: var(--lightMoss);
     font-size: 2rem;
     font-weight: lighter;
@@ -157,7 +147,7 @@ article h3 {
     color: black;
     font-weight: bolder;
     font-size: 1.3rem;
-    margin: 1.0rem 0 0.5rem;
+    margin: 1.5rem 0 0.5rem;
 }
 
 article h4 {
