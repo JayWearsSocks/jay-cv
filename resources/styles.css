@@ -95,6 +95,14 @@ aside li {
     margin: 0.2rem 0.5rem 0 0.5rem;
 }
 
+aside ul.competencies li {
+    padding-left: 0.5em;
+}
+
+aside ul.competencies li::marker {
+    content: "✔";
+}
+
 /* ul li::marker {
     content: "🌸";
     content: "🌿";
